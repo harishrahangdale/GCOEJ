@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.ac.gcoej.www.sdcgcoej">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Splash screen -->
+        <activity
+            android:name="in.ac.gcoej.www.sdcgcoej.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Developers"
+            android:label="Developers"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="Kridavedh 2K18"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CricScore"
+            android:label="Cricket Scores"
+            android:parentActivityName=".ScrollingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".KabaddiScore"
+            android:label="Kabaddi Scores"
+            android:parentActivityName=".ScrollingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".BasketScore"
+            android:label="BasketBall Scores"
+            android:parentActivityName=".ScrollingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".KhoScore"
+            android:label="Kho Kho Scores"
+            android:parentActivityName=".ScrollingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".VolleyScore"
+            android:label="Volley Ball Scores"
+            android:parentActivityName=".ScrollingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".FootScore"
+            android:label="Football Scores"
+            android:parentActivityName=".ScrollingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.ScrollingActivity" />
+        </activity>
+        <activity
+            android:name=".MIS"
+            android:label="MIS"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Address"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Contact"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Notice"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Live"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:hardwareAccelerated="true"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Result"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Academics"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Notifications"
+            android:label="Notifications"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Syllabus"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Department"
+            android:label="Departments"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity android:name=".Comp"
+            android:label="@string/app_name"
+            android:parentActivityName=".Department">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.Department" />
+        </activity>
+		<activity android:name=".Elect"
+            android:label="@string/app_name"
+            android:parentActivityName=".Department">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.Department" />
+        </activity>
+		<activity android:name=".Mech"
+            android:label="@string/app_name"
+            android:parentActivityName=".Department">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.Department" />
+        </activity>
+		<activity android:name=".Entc"
+            android:label="@string/app_name"
+            android:parentActivityName=".Department">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.Department" />
+        </activity>
+		<activity android:name=".Instru"
+            android:label="@string/app_name"
+            android:parentActivityName=".Department">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.Department" />
+        </activity>
+		<activity android:name=".Civil"
+            android:label=
+                "@string/app_name"
+            android:parentActivityName=".Department">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.Department" />
+        </activity>
+		<activity
+            android:name=".Science"
+            android:label="@string/app_name"
+            android:parentActivityName=".Department">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.Department" />
+        </activity>
+		<activity android:name=".Wrkshp"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AcademicCalendar"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TT"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Privacy"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="in.ac.gcoej.www.sdcgcoej.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

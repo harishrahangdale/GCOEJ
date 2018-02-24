@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.ac.gcoej.www.sdcgcoej.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- <HorizontalScrollView
+                 android:layout_width="match_parent"
+                 android:layout_height="210dp"
+                 android:layout_marginTop="10dp"
+                 android:scrollbarSize="0dp"
+                 android:scrollbars="horizontal">
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_margin="2dp"
+                     android:orientation="horizontal">
+
+                     <android.support.v7.widget.CardView
+                         android:id="@+id/firstCard_match"
+                         android:layout_width="300dp"
+                         android:layout_height="200dp"
+                         android:layout_marginEnd="12dp"
+                         android:layout_marginStart="12dp"
+                         android:padding="2dp"
+                         app:cardCornerRadius="8dp">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="20sp"
+                             android:layout_marginTop="170sp"
+                             android:text="Game In Progress...  Check Live Update"
+                             android:textColor="@color/Red"
+                             android:textSize="15sp" />
+
+                         <android.support.v7.widget.CardView
+                             android:layout_width="300dp"
+                             android:layout_height="160dp"
+                             android:onClick="next">
+
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="12dp"
+                                 android:layout_marginTop="10dp"
+                                 android:text="1st Match, Indian Premier League, 2017"
+                                 android:textColor="@color/Gray" />
+
+                             <ImageView
+                                 android:layout_width="50dp"
+                                 android:layout_height="40dp"
+                                 android:layout_marginStart="20sp"
+                                 android:layout_marginTop="48dp"
+                                 android:src="@drawable/rcb" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="100dp"
+                                 android:layout_marginTop="50dp"
+                                 android:text="RCB"
+                                 android:textSize="18sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="180dp"
+                                 android:layout_marginTop="50dp"
+                                 android:text="215/4 (19.2)"
+                                 android:textSize="18sp"
+                                 android:textStyle="bold" />
+
+                             <ImageView
+                                 android:layout_width="50dp"
+                                 android:layout_height="40dp"
+                                 android:layout_marginStart="20sp"
+                                 android:layout_marginTop="98dp"
+                                 android:src="@drawable/mi" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="100dp"
+                                 android:layout_marginTop="102dp"
+                                 android:text="MI"
+                                 android:textSize="18sp"
+                                 android:textStyle="bold" />
+
+                             <TextView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="180dp"
+                                 android:layout_marginTop="102dp"
+                                 android:text="205/8 (20)"
+                                 android:textSize="18sp"
+                                 android:textStyle="bold" />
+                         </android.support.v7.widget.CardView>
+                     </android.support.v7.widget.CardView>
+
+                     <android.support.v7.widget.CardView
+                         android:layout_width="300dp"
+                         android:layout_height="200dp"
+                         android:layout_marginEnd="12dp"
+                         android:layout_marginStart="12dp"
+                         android:background="@color/Black"
+                         android:padding="2dp"
+                         app:cardCornerRadius="8dp">
+
+                         <android.support.v7.widget.CardView
+                             android:layout_width="300dp"
+                             android:layout_height="155dp">
+
+                             <TextView
+                                 android:id="@+id/title_of_match"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="12dp"
+                                 android:layout_marginTop="10dp"
+                                 android:text="1st Match, Indian Premier League, 2017"
+                                 android:textColor="@color/Gray" />
+
+                             <ImageView
+                                 android:layout_width="70sp"
+                                 android:layout_height="70sp"
+                                 android:layout_marginStart="30sp"
+                                 android:layout_marginTop="50sp"
+                                 android:background="@drawable/sc" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="108sp"
+                                 android:layout_marginTop="70sp"
+                                 android:scrollbarSize="15sp"
+                                 android:text="30"
+                                 android:textColor="@color/Black"
+                                 android:textSize="18sp" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="170sp"
+                                 android:layout_marginTop="70sp"
+                                 android:scrollbarSize="15sp"
+                                 android:text="30"
+                                 android:textColor="@color/Black"
+                                 android:textSize="18sp" />
+
+                             <ImageView
+                                 android:layout_width="70sp"
+                                 android:layout_height="70sp"
+                                 android:layout_marginStart="200sp"
+                                 android:layout_marginTop="50sp"
+                                 android:background="@drawable/rzf" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="55sp"
+                                 android:layout_marginTop="125sp"
+                                 android:text="SC"
+                                 android:textColor="@color/Black"
+                                 android:textSize="15sp" />
+
+                             <TextView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginStart="220sp"
+                                 android:layout_marginTop="125sp"
+                                 android:text="RZF"
+                                 android:textColor="@color/Black"
+                                 android:textSize="15sp" />
+                         </android.support.v7.widget.CardView>
+                     </android.support.v7.widget.CardView>
+
+                     <android.support.v7.widget.CardView
+                         android:layout_width="300dp"
+                         android:layout_height="200dp"
+                         android:layout_marginEnd="12dp"
+                         android:layout_marginStart="12dp"
+                         android:background="@color/Black"
+                         android:padding="2dp"
+                         app:cardCornerRadius="8dp">
+
+                         <android.support.v7.widget.CardView
+                             android:layout_width="300dp"
+                             android:layout_height="155dp"
+                             app:cardCornerRadius="8dp">
+
+                         </android.support.v7.widget.CardView>
+                     </android.support.v7.widget.CardView>
+                 </LinearLayout>
+             </HorizontalScrollView> -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="170dp"
+                        android:layout_margin="10dp"
+                        android:onClick="cricket">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/ball"
+                                android:padding="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Cricket"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/lightgrayline" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Check  Live Cricket Score"
+                                android:textColor="#FF393636" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="170dp"
+                        android:layout_margin="10dp"
+                        android:onClick="football">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/abc1"
+                                android:padding="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Football"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/lightgrayline" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Check Live Football Score"
+                                android:textColor="#FF393636" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp"
+                    android:onClick="kabaddi">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/tanis"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Kabaddi"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgrayline" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Check Live Kabaddi Score"
+                            android:textColor="#FF393636" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="10dp"
+                    android:onClick="khokho">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:background="@drawable/badminton"
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Kho-Kho"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgrayline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Check Live Kho-Kho Score"
+                            android:textColor="#FF393636" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="170dp"
+                        android:layout_margin="10dp"
+                        android:onClick="volleyball">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/swim"
+                                android:padding="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Volleyball"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/lightgrayline" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Check Live Volleyball Score"
+                                android:textColor="#FF393636" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="170dp"
+                        android:layout_margin="10dp"
+                        android:onClick="basketball">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:background="@drawable/runn"
+                                android:padding="10dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Basketball"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_margin="10dp"
+                                android:background="@color/lightgrayline" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="Check Live Basketball Score"
+                                android:textColor="#FF393636" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

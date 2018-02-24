@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_dept"
+            android:icon="@drawable/ic_departments"
+            android:title="Departments" />
+        <item android:title="Academics"
+            android:id="@+id/academics"
+            android:icon="@drawable/ic_layers_black_24dp">
+
+        </item>
+    </group>
+
+
+<item android:title="Trending"
+    android:icon="@drawable/ic_whatshot_black_24dp">
+    <menu>
+		<item
+            android:title="MIS"
+            android:id="@+id/nav_MIS"
+            android:icon="@drawable/ic_widgets_black_24dp"/>
+			
+		<item
+            android:title="Live Events"
+            android:id="@+id/nav_live"
+            android:icon="@drawable/ic_live_tv_black_24dp"/>
+		
+		<item
+            android:title="KridaVedh 2K18"
+            android:id="@+id/nav_kv"
+            android:icon="@drawable/ic_soccerball"/>
+	</menu>
+</item>
+	
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_address"
+                android:icon="@drawable/ic_place_black_24dp"
+                android:title="Address" />
+            <item
+                android:id="@+id/nav_phone"
+                android:icon="@drawable/ic_phone_black_24dp"
+                android:title="Contact" />
+            <item
+        android:id="@+id/nav_dev"
+        android:icon="@drawable/ic_build_black_24dp"
+        android:title="Developers"/>
+            <item
+        android:id="@+id/nav_PPolicy"
+        android:title="Privacy Policy"
+        android:icon="@drawable/ic_security_black_24dp"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/spacers"
+        android:title="Follow Us On">
+        <menu>
+        <item
+            android:id="@+id/footer_spacer_1"
+            android:orderInCategory="200"
+            android:title="Facebook"
+            android:icon="@drawable/facebook_box"/>
+        <item
+            android:id="@+id/footer_spacer_2"
+            android:orderInCategory="200"
+            android:title="Youtube"
+            android:icon="@drawable/youtube_play"/>
+        </menu>
+    </item>
+</menu>
